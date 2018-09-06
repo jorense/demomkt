@@ -1,0 +1,248 @@
+.insight-container {
+  .insight-content { position: relative; background: $coWhite; z-index: 1; }
+  .insight-slider-banner {
+    .carousel-control {
+      &.right { color: $coBlack; }
+    }
+    .item {
+      .insight-caption { top: 0; right: 0; width: 40%; height: 100%; max-height: $bannerHeight; background: rgba(255,255,255,0.8); color: $coBlue; z-index: 2;
+        .i-c-inner { font-family: $fontB; max-width: 364px; padding-left: 50px;
+          a { color: $coBlue; }
+          h1 { @extend .par-max30; font-weight: 900; margin-bottom: 20px; }
+          h4 { @extend .par-medium; font-family: $fontA; font-weight: bold; text-transform: uppercase; }
+          h2 { @extend .par-max24; }
+          .learnmore { display: inline-block; font-family: $fontA; font-size: 14px; font-weight: bold; color: $coBlue; }
+        }
+      }
+    }
+
+    #insightSlider { max-height: $bannerHeight;
+      .img-object-fit { min-height: $bannerHeight; }
+    }
+
+    .carousel-indicators {
+      width: 40%; left: auto; right: 0; padding-left: 50px; text-align: left;
+    }
+
+    .carousel-fade {
+      .carousel-inner {
+        .item {
+          &:before { display: none !important; }
+          transition-property: opacity;
+          h4 { opacity: 0; @include transform(translateX(100%)); @include transition(all 0.7s ease); }
+          h2 { opacity: 0; @include transform(translateX(100%)); @include transition(all 1s ease); }
+          .learnmore { opacity: 0; @include transform(translateX(100%)); @include transition(all 1.2s ease); }
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+          opacity: 1;
+          h4, h2, .learnmore { opacity: 1; @include transform(translateX(0)); }
+        }
+
+      }
+    }
+
+    @include breakpoint(laptop) {
+      #insightSlider { max-height: 350px;
+        .img-object-fit { min-height: 350px; }
+      }
+      .item {
+        .insight-caption { padding-top: 0; background: none; width: 100%; color: $coWhite;
+          .i-c-inner { width: 100%; max-width: 750px; margin: 0 auto; padding-left: 30px; padding-right: 30px;
+            a { color: $coWhite; }
+          }
+        }
+      }
+      .cc-indicator { max-width: 750px; width: 100%; margin: 0 auto;
+        .carousel-indicators { width: auto; padding-left: 0; }
+      }
+      .carousel-control {
+        &.right { color: $coWhite; }
+      }
+    };
+  }
+
+  .insight-content-list {
+    .insight-grid { width: auto !important; min-width: auto !important;
+      .w-n-img { @include transition(all 2s ease);
+        img { @extend .img-object-fit; height: 359px; @include transition(all 0s ease !important); }
+      }
+      .w-n-list {
+        &:hover {
+          .w-n-img { @include transform( rotate(-5deg) scale(1.2));
+            img { @include transform( rotate(0) scale(1) !important); }
+          }
+        }
+      }
+    }
+    .h-whats-new-inner {
+      .item { padding: 0 !important; border: 15px solid rgba(255,255,255,0); }
+    }
+
+    @include breakpoint(lg) {
+      .w-n-img {
+        img { height: 292px !important; }
+      }
+    };
+
+    @include breakpoint(laptop) {
+      .h-whats-new-inner {
+        .item { width: 50%; }
+      }
+    };
+
+    @include breakpoint(phablet) {
+      .h-whats-new-inner {
+        .item { width: 100%; }
+      }
+      .w-n-list .w-n-content h3 { height: auto !important; }
+      .w-n-img {
+        img { height: 250px !important; }
+      }
+    };
+
+    @include breakpoint(mobile) {
+      .w-n-img {
+        img { height: 200px !important; }
+      }
+    };
+  }
+
+  @include breakpoint(laptop) {
+    .insight-content { padding-top: 50px; }
+    .share-mobile { margin-top: 0;
+      a { color: #c8c8c8; }
+    }
+  };
+
+  // Inner
+  &.insight-inner {
+    @include breakpoint(laptop) {
+      .insight-content { padding-top: 0; }
+      .pt5 { padding-top: 20px !important; }
+      .pb5 { padding-bottom: 20px !important; }
+      .mt5 { margin-top: 20px !important; }
+      .mb5 { margin-bottom: 20px !important; }
+
+      .h-whats-new { margin-bottom: 50px; }
+      .insight-inner-banner { max-height: 350px;
+        > img { min-height: 286px; }
+      }
+    };
+    .insight-inner-banner { max-height: $bannerHeight;
+      > img { min-height: $bannerHeight; }
+    }
+    .is-in-top { padding: 30px; background: $coWhite; margin-top: -90px;
+      > span { position: absolute; left: 0; top: -36px; display: inline-block; color: $coWhite; background: $coGreen; padding: 7px 10px; }
+      h1 { @extend .par-max30; font-family: $fontB; font-weight: 900; margin-top: 0; color: $coGray; }
+      h3 { font-family: $fontC; font-weight: normal; }
+      .is-author { position: relative; @extend .par-large; line-height: 18px; margin-top: 10px; margin-left: 84px; overflow: hidden;
+        strong { font-weight: bold; }
+      }
+
+      @include breakpoint(laptop) {
+        margin-top: 0; padding-left: 0; padding-right: 0;
+        h3 { margin-bottom: 20px; }
+        span { top: -33px; }
+      };
+    }
+
+    .is-in-content { padding-left: 30px; padding-right: 30px;
+      @include breakpoint(laptop) {
+        padding-left: 0; padding-right: 0;
+      }
+      .in-is-title { padding: 30px; background: $coSLGray;
+        h2 { position: relative; font-style: italic; @extend .par-max24; font-weight: bold; margin: 0; padding-left: 30px;
+          &:before { position: absolute; display: block; top: 0; left: 0; content: ''; width: 5px; height: 100%; border-right: 5px solid $coGreen; }
+        }
+
+        @include breakpoint(laptop) {
+          &.left { margin-bottom: 50px; }
+        };
+
+        @include breakpoint(tablet2) {
+          margin-left: -30px; margin-right: -30px;
+        };
+      }
+    }
+  }
+}
+
+.is-in-slide {
+  .item {
+    .item-img { background: $coGray; width: 100%; height: 460px; position: relative; overflow: hidden;
+      &:before { position: absolute; bottom: 0; left: 0; width: 100%; height: 60px; content: ''; @include linear-gradient(transparent 0, $coBlack 100%); z-index: 1; opacity: 0.7; }
+    }
+    // img { height: 460px; }
+    img { width: 100%; height: auto;
+      &.img-object-fit { width: auto; max-width: 100%; height: 460px }
+    }
+  }
+  .caption { padding: 30px; background: $coSLGray;
+    p { margin: 0; }
+  }
+  .carousel-indicators { bottom: auto; top: 420px; left: 30px; }
+  .carousel-control { top: 420px; width: 24px; height: 24px; background: none !important;
+    &.right { right: 16px; }
+    &.left { right: 55px; left: auto; }
+  }
+
+  @include breakpoint(tablet2) {
+    .item {
+      .item-img { height: 255px;
+        img.img-object-fit { height: 255px; }
+      }
+    }
+    .carousel-indicators { top: 226px; left: 15px; }
+    .carousel-control { top: 224px;
+      &.right { right: 7px; }
+      &.left { right: 39px; left: auto; }
+    }
+  };
+}
+
+.is-in-form { background: $coSLGray;
+  .cols { padding: 0; }
+  .is-in-f-img-cap { bottom: 30px; left: 0;
+    h2 { display: inline-block; @extend .par-max24; font-family: $fontB; font-weight: 900; padding: 20px 30px; color: $coWhite; background: rgba(12,37,68,0.9); }
+  }
+  .contact-us-box { padding: 30px; max-width: 100%; box-shadow: none; background: none;
+    h3 { @extend .par-max30; font-weight: 900; }
+    .contact-form3 {
+      h3 { @extend .par-max24; }
+    }
+  }
+  .checkmark { border: 1px solid $coGray; }
+  .img-object-fit { min-height: 469px; }
+  @include breakpoint(tablet2) {
+    .img-object-fit { min-height: 250px; max-height: 469px; }
+  };
+}
+
+.linkedin-widget { padding: 20px; background: #f1f1f1; @extend .par-medium;
+  p { position: relative; padding-top: 2px; margin-left: 140px; overflow: hidden; margin-bottom: 0; }
+}
+
+.is-in-tag {
+  h2 { @extend .par-max24; font-family: $fontB; font-weight: bold; padding-top: 20px; margin-top: 0; border-top: 1px solid #cccccc; }
+  .tags { display: inline-block; margin-right: 5px; margin-top: 5px; padding: 5px 10px; border: 1px solid #cccccc; }
+}
+
+.sns-fixed { position: absolute; top: 70%; left: 50%; @include transform(translateX(-640px));
+  a { display: block; font-size: 18px; padding: 6px 7px; margin: 10px 0; width: 36px; height: 36px; border-radius: 100%; color: $coWhite; text-align: center;
+    &.facebook { background: $coFb; }
+    &.twitter { background: $coTwitter; }
+    &.linkedin { background: $coLinkedin; }
+    &.googleplus { background: $coGooglePlus; }
+  }
+
+  @include breakpoint(bigdesktop) {
+    @include transform(translateX(-600px));
+  };
+
+  @include breakpoint(lg) {
+    @include transform(translateX(-490px));
+  };
+}

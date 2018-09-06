@@ -1,0 +1,81 @@
+.careers {
+  h3 { @extend .par-xxlarge; font-weight: bold; font-family: $fontB; color: $coBlue; }
+}
+
+.career-banner {
+  .in-b-inner {
+    &:before { background: rgba(0,0,0,0.3) !important; }
+  }
+}
+
+.sk-row { margin-left: -10px; margin-right: -10px;
+  .sk-boxes { vertical-align: top; width: 25%; padding: 10px; margin-left: -2px; margin-right: -2px;
+    &.sm { width: 20%; }
+    .sk-box { width: 100%; height: 53px; background: #084e68; color: $coWhite;
+      &.lblue { background: #2dbfce; }
+      &.dlblue { background: #009bc4; }
+    }
+
+  }
+
+  @include breakpoint(laptop) {
+    margin-left: -5px; margin-right: -5px;
+    .sk-boxes { width: 50% !important; padding: 5px; }
+  };
+
+  @include breakpoint(tablet2) {
+    .sk-boxes { font-size: 12px; }
+  };
+}
+
+
+.career-calendar { background: $coAsh; padding: 15px;
+  h3 { margin-bottom: 0; }
+  .car-col { position: relative; width: calc(50% - 65px); margin-top: 10px; border-top: 2px solid $coBlue;
+    &.left, &.right {
+      &:before { position: absolute; font-size: 24px !important; top: -14px; left: -1px; @extend .fa; content: '\f104'; }
+    }
+    &.right {
+      &:before { left: auto; right: -9px; content: '\f105'; }
+    }
+  }
+  .car-month { width: 130px; }
+  .mb-text {
+    h3 { width: calc(50% - 65px); }
+
+    @include breakpoint(laptop) {
+      h3 { float: none !important; font-size: 15px; width: 100%; margin-top: 10px; }
+    };
+  }
+}
+
+.career-search-left {
+  img { height: 532px; }
+}
+
+.career-search-right { padding: 50px; height: 432px; background: $coAsh;
+  .cr-s-right-inner { max-width: 388px; }
+}
+
+@include breakpoint(laptop) {
+  .career-search { max-width: 780px; padding-left: 30px; padding-right: 30px; margin: 0 auto; }
+  .career-search-left {
+    img { width: 100%; height: 380px; }
+  }
+  .career-search-right { padding: 30px; margin-top: 30px !important; height: auto;
+    .cr-s-right-inner { max-width: 100%; }
+  }
+};
+
+@include breakpoint(tablet2) {
+  .career-search-left {
+    img { height: 250px; }
+  }
+  .career-search-right { margin-left: -30px; }
+};
+
+@include breakpoint(phablet) {
+  .career-search-left {
+    img { height: 250px; }
+  }
+};

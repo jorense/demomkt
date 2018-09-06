@@ -1,0 +1,59 @@
+# Turn on rewrite engine
+RewriteEngine on
+
+# Force www ind url
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Semantic URL for home
+RewriteRule ^([ensc]+)/home index_p1.php?lang=$1 [NC,L,QSA]
+
+# Semantic URL for industry content
+RewriteRule ^([ensc]+)/industry/(.+) industry_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for infinitum content
+RewriteRule ^([ensc]+)/infinitum/(.+) infinitum_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for service content
+RewriteRule ^([ensc]+)/service/(.+) service_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for data center content
+RewriteRule ^([ensc]+)/data-center/(.+) datacenter_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for stories index
+RewriteRule ^([ensc]+)/stories stories_index_p1.php?lang=$1 [NC,L,QSA]
+
+# Semantic URL for stories content
+RewriteRule ^([ensc]+)/story/(.+) stories_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for about us content
+RewriteRule ^([ensc]+)/about-us/(.+) about_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for news index
+RewriteRule ^([ensc]+)/news/ news_index_p1.php?lang=$1 [NC,L,QSA]
+
+# Semantic URL for news content
+RewriteRule ^([ensc]+)/news-entry/(.+) news_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for insight index
+RewriteRule ^([ensc]+)/insights insight_index_p1.php?lang=$1 [NC,L,QSA]
+
+# Semantic URL for insight content
+RewriteRule ^([ensc]+)/insight/(.+) insight_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for event index
+RewriteRule ^([ensc]+)/events event_index_p1.php?lang=$1 [NC,L,QSA]
+
+# Semantic URL for event content
+RewriteRule ^([ensc]+)/event/(.+) event_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for career content
+RewriteRule ^([ensc]+)/career/(.+) career_content_p1.php?lang=$1&semantic=$2 [NC,L,QSA]
+
+# Semantic URL for contact us index
+RewriteRule ^([ensc]+)/contact-us contact_p1.php?lang=$1 [NC,L,QSA]
+
+# Semantic URL for search result
+RewriteRule ^([ensc]+)/search/(.+) search_result_p1.php?lang=$1&keyword=$2 [NC,L,QSA]

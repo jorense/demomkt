@@ -1,0 +1,93 @@
+.pw-linkedin { display: inline-block; width: 15px; height: 15px; background: url('../images/icons/icon_linkedin_white.svg');
+  &.blue { background: url('../images/icons/icon_linkedin_blue.svg') no-repeat; }
+}
+
+.pw-facebook { display: inline-block; width: 10px; height: 13px; background: url('../images/icons/icon_facebook_white.svg') no-repeat;
+  &.blue { background: url('../images/icons/icon_facebook_blue.svg') no-repeat; }
+}
+
+.pw-twitter { display: inline-block; width: 15px; height: 13px; background: url('../images/icons/icon_twitter_white.svg') no-repeat;
+  &.blue { background: url('../images/icons/icon_twitter_blue.svg') no-repeat; }
+}
+
+.pw-youtube { display: inline-block; width: 15px; height: 15px; background: url('../images/icons/icon_youtube_white.svg') no-repeat;
+  &.blue { background: url('../images/icons/icon_youtube_blue.svg') no-repeat; }
+}
+
+.pw-linkedin-circle { display: inline-block; width: 14px; height: 14px; background: url('../images/icons/icon_linkedin_Dblue.svg') no-repeat center;
+  &.white { background: url('../images/icons/icon_linkedin_white.svg') no-repeat center; }
+}
+
+.pw-facebook-circle { display: inline-block; width: 14px; height: 14px; background: url('../images/icons/icon_facebook_Dblue.svg') no-repeat center;
+  &.white { background: url('../images/icons/icon_facebook_white.svg') no-repeat center; }
+}
+
+.pw-twitter-circle { display: inline-block; width: 14px; height: 14px; background: url('../images/icons/icon_twitter_Dblue.svg') no-repeat center;
+  &.white { background: url('../images/icons/icon_twitter_white.svg') no-repeat center; }
+}
+
+.pw-youtube-circle { display: inline-block; width: 14px; height: 14px; background: url('../images/icons/icon_youtube_Dblue.svg') no-repeat center;
+  &.white { background: url('../images/icons/icon_youtube_white.svg') no-repeat center; }
+}
+
+.pw-new-circle { display: inline-block; width: 14px; height: 14px; background: url('../images/icons/icon_new_white.jpg') no-repeat center;
+  &.white { background: url('../images/icons/icon_new_white.jpg') no-repeat center; }
+}
+
+.pw-contact { display: inline-block; width: 20px; height: 20px; background: url('../images/icons/icon_contact.svg') no-repeat center;
+  &.blue { background: url('../images/icons/icon_contact_blue.svg') no-repeat center; }
+}
+
+.pw-bfsi { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/banking_and_finance.svg') no-repeat center; }
+
+.pw-cmu { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/communication.svg') no-repeat center; }
+
+.pw-hospitality { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_hospitality.svg') no-repeat center; }
+
+.pw-public { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_public.svg') no-repeat center; }
+
+.pw-rml { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_RML.svg') no-repeat center; }
+
+.pw-tnt { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_TnT.svg') no-repeat center; }
+
+.pw-cloud { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_cloud.png') no-repeat center;
+  &.blue { background: url('../images/icons/icon_cloud_blue.png') no-repeat center; background-size: 100%; }
+}
+
+.pw-ms { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_ManagedServices.png') no-repeat center; background-size: 76%;
+  &.blue { background: url('../images/icons/icon_ManagedServices_blue.png') no-repeat center; background-size: 76%; }
+}
+
+.pw-ad { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_ApplicationDevelopment.png') no-repeat center; background-size: 100%;
+  &.blue { background: url('../images/icons/icon_ApplicationDevelopment_blue.png') no-repeat center; background-size: 100%; }
+}
+
+.pw-dIoT { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_digitalioT.png') no-repeat center; background-size: 100%;
+  &.blue { background: url('../images/icons/icon_digitalioT_blue.png') no-repeat center; background-size: 100%; }
+}
+
+.pw-ea { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_EnterpriseApplications.png') no-repeat center; background-size: 100%;
+  &.blue { background: url('../images/icons/icon_EnterpriseApplications_blue.png') no-repeat center; background-size: 100%; }
+}
+
+.pw-ts { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_TechnicalServices.png') no-repeat center; background-size: 83%;
+  &.blue { background: url('../images/icons/icon_TechnicalServices_blue.png') no-repeat center; background-size: 83%; }
+}
+
+.pw-infrastructure { display: inline-block; width: 29px; height: 25px; background: url('../images/icons/icon_infrastructure.png') no-repeat center; background-size: 100%;
+  &.blue { background: url('../images/icons/icon_infrastructure_blue.png') no-repeat center; background-size: 100%; }
+}
+
+.pw-arrowUp { display: inline-block; width: 15px; height: 18px; background: url('../images/icons/icon_arrow_white.svg') no-repeat center; background-size: 100%;
+  &.blue { background: url('../images/icons/icon_arrow_up.svg') no-repeat center; background-size: 100%; }
+}
+
+.pw-close { display: inline-block; width: 16px; height: 16px; background: url('../images/icons/close-white.svg') no-repeat center; }
+
+.pw-search { display: inline-block; width: 16px; height: 16px; background: url('../images/icons/icon_search_white.svg') no-repeat center;
+  &.blue { background: url('../images/icons/icon_search.svg') no-repeat center; }
+}
+
+.pw-arrow-right { display: inline-block; width: 14px; height: 12px; background: url('../images/icons/icon_arrow_blue.svg') no-repeat center;
+  &.left { @include transform(rotate(180deg)); }
+}

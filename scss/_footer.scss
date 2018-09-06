@@ -1,0 +1,68 @@
+// ionclude all your related style here in the footer, you can leave it empty if the page has no footer
+footer { background: #283140; color: #EAEAEA !important; z-index: 2; position: relative;
+  .footer-nav {
+    h2 { font-family: $fontB; font-weight: bold; line-height: 16px; margin: 0; @extend .par-xlarge; color: #EAEAEA !important; }
+    li { position: relative; margin-top: 15px;
+      a { position: relative; display: inline-block; line-height: 16px; color: #EAEAEA !important; z-index: 1; padding-bottom: 2px;
+        &:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; height: 2px; background: $coGreen; @include transform-origin(left center); @include transform(scaleX(0)); @extend .ease; }
+        &:hover {
+          &:after { @include transform(scaleX(1)); }
+        }
+      }
+    }
+  }
+
+  .footer-bottom { padding: 15px 15px; background: #181D26;
+    p { padding-top: 6px; margin-bottom: 0; color: #EAEAEA;
+      &.copyright { opacity: 0.8; }
+    }
+    a { position: relative; color: #EAEAEA; padding-bottom: 2px;
+      &:hover { color: $coLGray; }
+    }
+    span { display: inline-block; padding: 0 10px; }
+
+    .footer-sns {
+      a { display: inline-block; vertical-align: middle; padding: 8px 8px 3px 8px; margin-left: 5px; @include border-radius(100%); background: #c0c1c2;
+        &.coweChat { padding: 6px 7px; color: #181D26; }
+        &:hover {
+          &.coLinkedin { background: $coLinkedin; }
+          &.coFb { background: $coFb; }
+          &.coTwitter { background: $coTwitter; }
+          &.coYoutube { background: $coYoutube; }
+          &.coweChat { background: $coWeChat; }
+        }
+      }
+    }
+
+    @include breakpoint(smalldesktop) {
+      text-align: center;
+      p { float: none !important; clear: both !important; display: block; }
+      .footer-sns { margin-top: 20px; margin-bottom: 15px; }
+    };
+  }
+}
+
+.sm-b { position: relative;
+  &:after { display: block; content:''; width: 26px; height: 1px; margin-top: 15px; border-top: 1px solid #EAEAEA; }
+}
+.pt14 { padding-top: 14px; }
+.pt23 { padding-top: 23px; }
+
+.register-con {
+  &.blue {
+    input { color: $coBlue; border-bottom: 1px solid $coBlue; background: url('../images/icons/icon_arrow_blue.svg') no-repeat center right; background-size: 24px;
+      @include placeholder { color: $coBlue; }
+    }
+    &:before { border-top: 1px solid $coLGray;  }
+  }
+  &.focus {
+    &:before { width: 100%; }
+  }
+  input { padding: 10px 0; padding-right: 30px; width: 100%; border: none; border-bottom: 1px solid #EAEAEA; background: url('../images/icons/icon_arrow_white.png') no-repeat center right; background-size: 24px; color: #EAEAEA;
+    &:focus {
+      @include placeholder { color: transparent; opacity: 0; }
+    }
+    @include placeholder { color: #EAEAEA; opacity: 1; letter-spacing: 2px; font-weight: bold; }
+  }
+  &:before { position: absolute; bottom: 0; left: 0; width: 0; height: 1px; content: ''; border-top: 1px solid $coLGray; @extend .ease; }
+}

@@ -1,0 +1,39 @@
+// includes all tags for paragraphs and titles such as header, p, span
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.67em; }
+.par p { padding:10px 0px; }
+.par2 p { padding:5px 0px; }
+.in-par  {
+  p { margin-bottom: 25px;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  @include breakpoint(laptop) {
+    p {
+      &:last-child { margin-bottom: 25px; }
+    }
+    &.pl2, .pl2 { padding-left: 0; }
+    &.pr2, .pr2 { padding-right: 0; }
+  };
+}
+
+
+
+.bp-center { text-align:center; }
+.bp-left { text-align:left; }
+.bp-right { text-align:right; }
+.bp-justify { text-align:justify; }
+.bp-tt { text-transform:uppercase; }
+.par-small { font-size: $fontSmall; }
+.par-medium { @include responsive-font-size (14px, 14px, 991px, 1200px, 0px); }
+.par-large { @include responsive-font-size (14px, 16px, 991px, 1200px, 0px); }
+.par-xlarge { @include responsive-font-size (14px, 18px, 991px, 1200px, 0px); }
+.par-xxlarge { @include responsive-font-size (20px, 20px, 991px, 1200px, 0px); }
+.par-max24 { @include responsive-font-size (20px, 24px, 991px, 1200px, 0px); }
+.par-max { @include responsive-font-size (22px, 28px, 991px, 1200px, 0px); }
+.par-max30 { @include responsive-font-size (28px, 30px, 991px, 1200px, 0px); }
+.par-max40 { @include responsive-font-size (30px, 40px, 991px, 1200px, 0px); }

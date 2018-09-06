@@ -1,0 +1,216 @@
+$dark-blue: #12213D;
+$green: #31A27E;
+$action-color: $green;
+
+* {
+  box-sizing: border-box;
+}
+
+@include breakpoint(laptop) {
+  .button {
+    &:hover {
+      background-color: none;
+    }
+  }
+
+  .button--bubble__container .effect-button { background: none !important; }
+  .button--bubble__effect-container .circle { display: none !important; }
+
+  .green {
+    .effect-button { background: none !important; }
+    &:hover {
+      background-color: $green !important;
+      color: #fff;
+    }
+  }
+}
+
+
+.button {
+  -webkit-font-smoothing: antialiased;
+
+  &:hover {
+    background-color: $dark-blue !important;
+    @include transform(scale(0.95));
+    color: #fff;
+  }
+
+  &:active {
+    // transform: scale(0.95);
+  }
+
+  &--bubble {
+    position: relative;
+    z-index: 2;
+    color: white;
+    background: none;
+
+    &:hover {
+      background: none;
+    }
+
+    &:hover + .button--bubble__effect-container .circle {
+      background: $dark-blue;
+    }
+
+    &:hover + .button--bubble__effect-container .button {
+      background: $dark-blue;
+    }
+
+    &:active + .button--bubble__effect-container {
+      // transform: scale(0.95);
+    }
+
+    &__container {
+      position: relative;
+      display: inline-block;
+
+      .effect-button {
+        position: absolute;
+        width: 50%;
+        height: 25%;
+        top: 50%;
+        left: 25%;
+        z-index: 1;
+        transform: translateY(-50%);
+        background: $dark-blue;
+        transition: background 0.1s ease-out;
+      }
+    }
+  }
+}
+
+.button--bubble__effect-container {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 400%;
+  top: -150%;
+  left: -50%;
+  -webkit-filter: url("#goo");
+  filter: url("#goo");
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+
+  .circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background: $dark-blue;
+    transition: background 0.1s ease-out;
+
+    &.top-left {
+        top: 40%;
+        left: 27%;
+    }
+
+    &.bottom-right {
+        bottom: 40%;
+        right: 27%;
+    }
+  }
+}
+
+.green {
+  .button {
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+      background-color: $green !important;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &--bubble {
+      position: relative;
+      z-index: 2;
+      color: white;
+      background: none;
+
+      &:hover {
+        background: none;
+      }
+
+      &:hover + .button--bubble__effect-container .circle {
+        background: $green !important;
+      }
+
+      &:hover + .button--bubble__effect-container .button {
+        background: $green !important;
+      }
+
+      &:active + .button--bubble__effect-container {
+        // transform: scale(0.95);
+      }
+
+      &__container {
+        position: relative;
+        display: inline-block;
+
+        .effect-button {
+          position: absolute;
+          width: 50%;
+          height: 25%;
+          top: 50%;
+          left: 25%;
+          z-index: 1;
+          transform: translateY(-50%);
+          background: $green !important;
+          transition: background 0.1s ease-out;
+        }
+      }
+    }
+  }
+
+  .button--bubble__effect-container {
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+
+    .circle {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 15px;
+      background: $green !important;
+      transition: background 0.1s ease-out;
+
+      &.top-left {
+          top: 40%;
+          left: 27%;
+      }
+
+      &.bottom-right {
+          bottom: 40%;
+          right: 27%;
+      }
+    }
+  }
+}
+
+.green {
+  .effect-button { background: $green; }
+}
+
+.goo {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.button--bubble__container {
+  top: 50%;
+  margin-top: -25px;
+}

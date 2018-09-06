@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="76 2196 51 51">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-icon_industries_17);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #12213d;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-icon_industries_17">
+      <rect x="76" y="2196" width="51" height="51"/>
+    </clipPath>
+  </defs>
+  <g id="icon_industries_17" class="cls-1">
+    <rect class="cls-3" x="76" y="2196" width="51" height="51"/>
+    <g id="Group_114" data-name="Group 114" transform="translate(77 2196)">
+      <circle id="Ellipse_25" data-name="Ellipse 25" class="cls-2" cx="3.101" cy="3.101" r="3.101" transform="translate(10.302 17.537)"/>
+      <circle id="Ellipse_26" data-name="Ellipse 26" class="cls-2" cx="3.101" cy="3.101" r="3.101" transform="translate(30.973 19.604)"/>
+      <circle id="Ellipse_27" data-name="Ellipse 27" class="cls-2" cx="3.101" cy="3.101" r="3.101" transform="translate(30.973 29.939)"/>
+      <circle id="Ellipse_28" data-name="Ellipse 28" class="cls-2" cx="3.101" cy="3.101" r="3.101" transform="translate(20.637 13.402)"/>
+      <line id="Line_36" data-name="Line 36" class="cls-2" y2="29.973" transform="translate(23.738 19.604)"/>
+      <path id="Path_112" data-name="Path 112" class="cls-2" d="M31.134,24,27,28.134v6.2" transform="translate(0.872 0.771)"/>
+      <path id="Path_113" data-name="Path 113" class="cls-2" d="M15,22l4.134,4.134v6.2" transform="translate(0.469 0.704)"/>
+      <path id="Path_114" data-name="Path 114" class="cls-2" d="M31.134,35,27,39.134v3.1" transform="translate(0.872 1.14)"/>
+      <path id="Path_115" data-name="Path 115" class="cls-2" d="M40.274,28.905h1.034a7.235,7.235,0,1,0-2.2-14.126A7.228,7.228,0,0,0,27.281,7.93a10.333,10.333,0,0,0-19.6,6.533,7.232,7.232,0,0,0,.557,14.442H16.5"/>
+      <path id="Path_116" data-name="Path 116" class="cls-2" d="M26.445,7.7a10.284,10.284,0,0,1,.525,2.375" transform="translate(0.853 0.225)"/>
+      <path id="Path_117" data-name="Path 117" class="cls-2" d="M37.9,14.333a7.187,7.187,0,0,1-.9,2.351" transform="translate(1.207 0.447)"/>
+      <path id="Path_118" data-name="Path 118" class="cls-2" d="M7.46,14.021a7.265,7.265,0,0,1,2.684.3" transform="translate(0.217 0.436)"/>
+      <line id="Line_37" data-name="Line 37" class="cls-2" y2="2.067" transform="translate(19.604 35.107)"/>
+      <line id="Line_38" data-name="Line 38" class="cls-2" y2="2.067" transform="translate(19.604 39.241)"/>
+      <line id="Line_39" data-name="Line 39" class="cls-2" y2="2.067" transform="translate(27.872 45.442)"/>
+      <line id="Line_40" data-name="Line 40" class="cls-2" y2="2.067" transform="translate(19.604 43.375)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+// import all scss files here, please don't remove the notes for this template
+
+// mostly default imports
+@import 'libraries/fonts'; // for all embedded fonts
+@import 'libraries/variables'; // all declared variables including font size, color and bg color and font families
+@import 'libraries/mixins'; // for groups of css that can be reuse like CSS3 for cross browsing
+@import 'libraries/reset'; // this includes all normalize or reset css
+@import 'libraries/typography'; // for the paragraphs including header, p, line-height,etc
+@import 'libraries/easing'; // for easing
+
+// unique imports
+@import 'libraries/pace'; // for pace preloader
+
+@import 'flexslider'; // for CSS Flexslider
+@import 'spacing'; // for CSS Padding and Margin
+@import 'custom-select'; // for CSS Custom Select
+@import 'bootstrap-select'; // for CSS Custom Select
+@import 'margin'; // for CSS margin
+@import 'padding'; // for CSS padding
+
+// all customized styles
+@import 'header'; // the main style css
+@import 'footer'; // the main style css
+@import 'main'; // the main style css
+@import 'font-awesome'; // for font icon
+@import 'svg-icons'; // for SVG icons
+@import 'animate'; // for CSS animation
+@import 'hover-button'; // for CSS hover animation
+@import 'industry'; // for CSS Industry page
+@import 'solutions'; // for CSS Solutions Page
+@import 'contactus'; // for CSS Contact Us Page
+@import 'stories'; // for CSS Stories Page
+@import 'insight'; // for CSS Insight Page
+@import 'datacenter'; // for CSS Data Center Page
+@import 'dinfinitum'; // for CSS D-Infinitum
+@import 'event'; // for CSS Event
+@import 'news'; // for CSS News
+@import 'search'; // for CSS Search Result
+@import 'about'; // for CSS About Us
+@import 'career'; // for CSS Career

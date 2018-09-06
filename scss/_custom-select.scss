@@ -1,0 +1,85 @@
+.custom-select-wrapper { position:relative; display:block; text-align:left; font-size: 14px; background: $coWhite; border: none; border-bottom:1px solid $coGray; @extend .bp-box;
+  &:after { content: "\f107"; font:normal normal normal 14px/1 FontAwesome; font-size: 22px !important; position: absolute; display: block; top: 0; right: 0; margin: 1px 0; height: auto !important; padding: 4px 0; border: none; background: none; font-size: 14px; color: $coGray; @include transition(all 0.3s ease); }
+  &:hover {
+    &:after { color: $coGray !important; }
+  }
+  .custom-select-display { display: block; min-width:27px; min-height: 30px; padding: 10px 60px 10px 15px; color: $defaultColor; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; @extend .bp-box;
+    &.default { color: $coGray; }
+  }
+  select { -webkit-appearance: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 0; filter: alpha(opacity=0); opacity: 0; z-index: 1; cursor: pointer; border: none; outline: none; @extend .bp-box; }
+}
+
+.c-select { width: 100%;
+  .custom-select-wrapper { color: $coGray;
+    select { color: $coGray; }
+    .custom-select-display { min-height: 30px; font-size: 14px; padding: 5px 0; color: $coGray; }
+  }
+}
+
+
+/* Customize the label (the container) */
+.form-check {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  padding-top: 1px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.form-check input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+// .form-check:hover input[type="checkbox"] ~ .checkmark {
+//   background-color: #ccc;
+// }
+
+/* When the checkbox is checked, add a blue background */
+.form-check input[type="checkbox"]:checked ~ .checkmark {
+  background-color: $coGreen;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+// .form-check .checkmark:after {
+//   left: 9px;
+//   top: 5px;
+//   width: 5px;
+//   height: 10px;
+//   border: solid white;
+//   border-width: 0 3px 3px 0;
+//   -webkit-transform: rotate(45deg);
+//   -ms-transform: rotate(45deg);
+//   transform: rotate(45deg);
+// }

@@ -1,0 +1,179 @@
+.g-info { font-size: 14px; color: #3f3f3f;
+  h4 { font-size: 20px; font-family: $fontB; font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #12213d;
+    span { font-size: 14px; font-family: $fontA; font-weight: normal; }
+  }
+
+  .g-info-c { padding-bottom: 10px;
+    .g-info-content { position: relative; font-family: $fontC; margin-left: 30px; overflow: hidden;
+      a { color: $coGray; }
+    }
+  }
+}
+
+.contact-us-container {
+  .archive-map { width: 100%; min-height: 870px; height: 100vh; }
+
+  @include breakpoint(laptop) {
+    .archive-map { margin-top: 57px; height: 300px; min-height: 300px; }
+    .gm-style-iw { max-width: 300px !important; }
+  };
+}
+
+.contact-us-box { bottom: 50px; left: 50px; max-width: 402px; width: 100%; @extend .par-medium; background: $coWhite; box-shadow: 0 0 20px 2px rgba(0,0,0,.2);
+  .contact-tab { box-shadow: 0 8px 17px 0 rgba(0,0,0,.2);
+    li { float: left; width: 50%;
+      &.active {
+        a { color: $coGreen !important; box-shadow: inset 0 -3px 0 $coGreen !important; }
+      }
+    }
+    a { display: block; font-weight: bold; padding: 15px 10px; color: #acacac;
+      &:hover { color: $coGreen; }
+    }
+  }
+
+  .contact-us-content { @extend .par-medium;
+    .contact-form { padding: 30px; min-height: 528px; }
+    h3 { @extend .par-max24; font-family: $fontB; font-weight: bold; margin-top: 0; color: $coBlue; }
+    p { margin: 0;
+      &.mt2 { margin-top: 20px; }
+    }
+    .form-groups { position: relative; margin-top: 20px;
+      &.msg-group { margin-top: 30px; }
+      label, .form-controls.email[value=""] ~ label { position: absolute; top: 3px; left: 0; font-size: 14px; font-weight: normal; color: $coGray; margin-bottom: 0; @include transition(all 0.2s ease);
+        @include transform(translateY(0));
+        span { color: $coGreen; }
+        &.msg-label { padding-left: 6px; }
+      }
+      .form-controls { position: relative; width: 100%; height: 24px; border: none; border-bottom: 1px solid $coGray; background: none; z-index: 1;
+        &.message { border: 1px solid $coGray; height: 80px; padding: 10px;
+          &:focus { border-color: $coGreen; }
+        }
+      }
+      input[type='number'] { -moz-appearance:textfield; }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button { -webkit-appearance: none; }
+      .form-controls:focus ~ label, .form-controls:valid ~ label, .form-controls.email.valid ~ label, .form-controls.email:focus ~ label {
+        font-size: 12px; @include transform(translateY(-21px)); color: $coGreen; padding-left: 0 !important;
+        span { opacity: 0; }
+      }
+      .bars { bottom: 0; left: 0; width: 100%;
+        &:after { position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; content: ''; border-top: 1px solid $coGreen; z-index: 2; @include transform(scale(0, 1));  @include transition(all 0.2s ease); }
+      }
+      .form-controls:focus ~ .bars		{
+        &:after { @include transform(scale(1)); }
+      }
+      .taglines {
+        input { margin-top: 0; margin-right: 5px; }
+      }
+      .pccw-btn { height: 46px; border: none; }
+      .err-msg {
+        span { color: $coGreen; }
+      }
+      .contact-p-btn { height: 48px; }
+
+      @include breakpoint(laptop) {
+        .button--bubble__container { margin-top: 15px; }
+      };
+    }
+
+    .tagline { position: relative !important; opacity: 1 !important; color: $coGray !important; cursor: pointer;
+      a { color: $coGreen; }
+    }
+
+    .skip { display: inline-block; font-size: 17px; font-family: $fontB; font-weight: bold; padding-left: 20px; letter-spacing: 1px; color: $coBlue; }
+
+    // Form 2
+    .contact-form2 {
+      .specify { width: 83px;
+        input { width: 95px; border-left: none; border-top: none; border-right: none; }
+      }
+
+      .btn-default { text-transform: none; letter-spacing: 0; font-weight: normal; padding-left: 0 !important; }
+    }
+
+    // Form 3
+    .contact-form3 { display: flex; flex-direction: column; justify-content: center; min-height: 468px; }
+
+    // Contact location
+    .contact-us-location { padding-top: 30px; min-height: 528px;
+      p { font-family: $fontC; }
+      h3 { padding-left: 30px; padding-right: 30px; }
+      .contact-location-list { height: 462px; overflow: auto;
+        &::-webkit-scrollbar { width:5px; background:#fff; }
+        &::-webkit-scrollbar-track { background: #ddd; }
+        &::-webkit-scrollbar-thumb { background: #12213D; }
+        li { font-size: 14px; border-bottom: 1px solid $coLGray;
+          .c-l-l-inner { position: relative; padding: 20px 30px; padding-left: 70px; padding-right: 20px; cursor: pointer; @extend .ease;
+            &:before { position: absolute; top: 23px; left: 30px; width: 27px; height: 27px; content: ''; background: url('../images/page_template/blue_pin.png') no-repeat; @extend .ease; }
+            h4 { @extend .par-xxlarge; font-family: $fontB; margin: 0; font-weight: bold;
+              span { font-family: $fontA; font-size: 12px; font-weight: normal; }
+            }
+
+            &:hover, &.active { background: $coBlue; color: $coWhite;
+              h4 { color: $coWhite; }
+              &:before { background: url('../images/page_template/white_pin.png') no-repeat; }
+            }
+          }
+
+          &:last-child { border-bottom: none; }
+        }
+      }
+    }
+
+    @include breakpoint(laptop) {
+      .form-groups {
+        .button--bubble__container.pull-right { float: left !important; }
+      }
+    };
+  }
+
+  &.contact-us-box-widget { width: 402px; left: auto; right: 0; bottom: -20px; z-index: 2;
+    .contact-widget-close { font-size: 17px; padding: 10px; top: 0; right: 2px; cursor: pointer; color: $coLGray; }
+    .contact-us-content { max-height: 95vh; overflow-y: auto; overflow-x: hidden;
+      &::-webkit-scrollbar { width:5px; background:#fff; }
+      &::-webkit-scrollbar-track { background: #ddd; }
+      &::-webkit-scrollbar-thumb { background: #12213D; }
+      .contact-form { min-height: 50px;
+        .contact-form3 { min-height: 50px; }
+      }
+    }
+  }
+
+  .contact-l-widget { background: #f4f4f4; padding: 20px 30px; margin: -30px; margin-top: 30px;
+    .g-info-c { padding-bottom: 3px; }
+    .g-info h4 { margin-top: 0; margin-bottom: 5px; }
+    .find-btn { @extend .skip; padding-left: 0; }
+  }
+
+  @include breakpoint(laptop) {
+    position: relative !important; top: 0; left: 0; width: 100%; max-width: 100%; box-shadow: none;
+  };
+
+}
+
+@include keyframes(bouncing) {
+  from, 6%, 12%, 16%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    @include transform(translate3d(0,0,0));
+  }
+  1%, 3% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    @include transform(translate3d(0,-30px,0));
+  }
+  9% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    @include transform(translate3d(0,-15px,0));
+  }
+  14% {
+    @include transform(translate3d(0,-4px,0));
+  }
+};
+
+.bouncing {
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-name: bouncing;
+  transform-origin: center bottom;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}

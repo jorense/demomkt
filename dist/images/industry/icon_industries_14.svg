@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-92 2196 51 51">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-icon_industries_14);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #12213d;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-icon_industries_14">
+      <rect x="-92" y="2196" width="51" height="51"/>
+    </clipPath>
+  </defs>
+  <g id="icon_industries_14" class="cls-1">
+    <rect class="cls-4" x="-92" y="2196" width="51" height="51"/>
+    <g id="Group_110" data-name="Group 110" transform="translate(-90.522 2196.453)">
+      <line id="Line_18" data-name="Line 18" class="cls-2" y1="21.785" transform="translate(32.588 6.446)"/>
+      <path id="Path_96" data-name="Path 96" class="cls-2" d="M5.357,1A4.357,4.357,0,0,0,1,5.357v43.57H32.588V34.767" transform="translate(0 0)"/>
+      <path id="Path_97" data-name="Path 97" class="cls-2" d="M9.357,5.357V6.446h29.41V5.357A4.357,4.357,0,0,0,34.41,1H5A4.357,4.357,0,0,1,9.357,5.357Z" transform="translate(0.357 0)"/>
+      <line id="Line_19" data-name="Line 19" class="cls-3" x1="16.339" transform="translate(10.803 15.16)"/>
+      <line id="Line_20" data-name="Line 20" class="cls-3" x1="16.339" transform="translate(10.803 20.606)"/>
+      <line id="Line_21" data-name="Line 21" class="cls-3" x1="16.339" transform="translate(10.803 26.053)"/>
+      <line id="Line_22" data-name="Line 22" class="cls-3" x2="2.178" transform="translate(6.446 15.16)"/>
+      <line id="Line_23" data-name="Line 23" class="cls-3" x2="2.178" transform="translate(6.446 20.606)"/>
+      <line id="Line_24" data-name="Line 24" class="cls-3" x2="2.178" transform="translate(6.446 26.053)"/>
+      <path id="Path_98" data-name="Path 98" class="cls-2" d="M24.357,39.963,20,41.053,21.089,36.7,41.785,16l3.268,3.268Z" transform="translate(1.696 1.339)"/>
+      <path id="Path_99" data-name="Path 99" class="cls-2" d="M13.625,35.268V33.089H11.446L10.357,32,9.268,33.089H7.089v2.178L6,36.357l1.089,1.089v2.178H9.268l1.089,1.089,1.089-1.089h2.178V37.446l1.089-1.089Z" transform="translate(0.446 2.767)"/>
+    </g>
+  </g>
+</svg>

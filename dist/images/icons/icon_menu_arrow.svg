@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2308.041 -199.46 10.919 6.379">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3f3f3f;
+        stroke-miterlimit: 10;
+        stroke-width: 1.3px;
+      }
+    </style>
+  </defs>
+  <path id="icon_menu_arrow" class="cls-1" d="M17.071,7.071l-5,5-5-5" transform="translate(2301.429 -206.071)"/>
+</svg>

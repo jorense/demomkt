@@ -1,0 +1,2 @@
+[27-Mar-2018 15:08:06 Asia/Hong_Kong] PHP Warning:  strip_tags() expects parameter 1 to be string, array given in /home/demomktn/public_html/revamp/phase1/phase1/include/ajax.php on line 9
+[27-Mar-2018 15:08:53 Asia/Hong_Kong] PHP Warning:  strip_tags() expects parameter 1 to be string, array given in /home/demomktn/public_html/revamp/phase1/phase1/include/ajax.php on line 9

@@ -8,9 +8,11 @@
 	if($stage=='local') {
 		$domain_en = 'localhost';
 		$domain_sc = 'localhost';
-		$root_directory = 'http://localhost/revamp/phase1/phase1/'; // this is for the cms
-		$real_root_directory = 'http://localhost/revamp/phase1/'; // this is for the frontend
-		$nofollow = '<meta name="robots" content="noindex">';
+		//*$root_directory = 'http://localhost/revamp/phase1/phase1/'; // this is for the cms
+		/**$real_root_directory = 'http://localhost/revamp/phase1/'; // this is for the frontend**/
+		$root_directory = 'http://localhost/phase1/phase1/'; // this is for the cms
+		$real_root_directory = 'http://localhost/phase1/'; // this is for the frontend
+		//*$nofollow = '<meta name="robots" content="noindex">';
 		$google_analytics = '';
 
 		// SMTP
@@ -31,8 +33,10 @@
 	elseif($stage=='development') {
 		$domain_en = 'josephmok.me';
 		$domain_sc = 'josephmok.me';
-		$root_directory = 'http://www.josephmok.me/_projects/pccw_solutions/revamp/phase1/phase1/'; // this is for the cms
-		$real_root_directory = 'http://www.josephmok.me/_projects/pccw_solutions/revamp/phase1/'; // this is for the frontend
+		// $root_directory = 'http://www.josephmok.me/_projects/pccw_solutions/revamp/phase1/phase1/'; // this is for the cms
+		// $real_root_directory = 'http://www.josephmok.me/_projects/pccw_solutions/revamp/phase1/'; // this is for the frontend
+		$root_directory = 'http://localhost/phase1/phase1/'; // this is for the cms
+		$real_root_directory = 'http://localhost/phase1/'; // this is for the frontend
 		$nofollow = '<meta name="robots" content="noindex">';
 		$google_analytics = '';
 
@@ -54,8 +58,11 @@
 	elseif($stage=='dataplug') {
 		$domain_en = 'demomkt.net';
 		$domain_sc = 'demomkt.net';
-		$root_directory = 'http://www.demomkt.net/revamp/phase1/phase1/'; // this is for the cms
-		$real_root_directory = 'http://www.demomkt.net/revamp/phase1/'; // this is for the frontend
+		// $root_directory = 'http://www.demomkt.net/revamp/phase1/phase1/'; // this is for the cms
+		// $real_root_directory = 'http://www.demomkt.net/revamp/phase1/'; // this is for the frontend
+
+		$root_directory = 'http://localhost/phase1/phase1/'; // this is for the cms
+		$real_root_directory = 'http://localhost/phase1/'; // this is for the frontend
 		$nofollow = '<meta name="robots" content="noindex">';
 		$google_analytics = '';
 
@@ -100,8 +107,10 @@
 	elseif($stage=='live') {
 		$domain_en = 'pccwsolutions.com';
 		$domain_sc = 'pccwsolutions.com.cn';
-		$root_directory = ''; // this is for the cms
-		$real_root_directory = ''; // this is for the frontend
+		// $root_directory = ''; // this is for the cms
+		// $real_root_directory = ''; // this is for the frontend
+		$root_directory = 'http://localhost/phase1/phase1/'; // this is for the cms
+		$real_root_directory = 'http://localhost/phase1/'; // this is for the frontend
 		$google_analytics = "
 			<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-60069613-1\"></script>
